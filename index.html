@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzeo - Accueil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .home-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .home-container {
+            text-align: center;
+            color: white;
+            max-width: 1000px;
+        }
+        
+        .home-logo {
+            font-size: 100px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .home-title {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .home-subtitle {
+            font-size: 28px;
+            margin-bottom: 60px;
+            opacity: 0.9;
+        }
+        
+        .choice-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .choice-card {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .choice-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+        
+        .choice-icon {
+            font-size: 100px;
+            margin-bottom: 30px;
+        }
+        
+        .choice-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .choice-description {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .choice-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .choice-card:hover .choice-button {
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 768px) {
+            .choice-container {
+                grid-template-columns: 1fr;
+            }
+            .home-title {
+                font-size: 48px;
+            }
+        }
+        
+    </style>
+</head>
+<body class="home-page">
+    <div class="home-container">
+        <div class="home-logo"></div>
+        <body class="home-page">
+  <div class="home-container">
+    <div class="home-logo">
+      <img src="image-removebg-preview (2).png" alt="Logo Quizzeo" class="logo-img">
+    </div>
+    
+  </div>
+</body>
+  
+        
+        <div class="choice-container">
+            
+            <a href="join.php" class="choice-card">
+                <div class="choice-icon"></div>
+                <h2 class="choice-title">JOUER</h2>
+                <p class="choice-description">
+                    Vous avez un code PIN ?<br>
+                    Rejoignez un quiz et jouez !<br>
+                    Pas besoin de compte.
+                </p>
+                <div class="choice-button">Entrer le code PIN</div>
+            </a>
+            
+            
+            <a href="login.php" class="choice-card">
+                <div class="choice-icon"></div>
+                <h2 class="choice-title">CRÉER</h2>
+                <p class="choice-description">
+                    Vous êtes professeur/formateur ?<br>
+                    Créez vos quiz et obtenez un code PIN.<br>
+                    Connexion requise.
+                </p>
+                <div class="choice-button">Se connecter</div>
+            </a>
+        </div>
+        
+        <div style="margin-top: 60px; font-size: 16px; opacity: 0.8;">
+            <p>Nouveau ? <a href="register.php" style="color: white; text-decoration: underline;">Créer un compte</a></p>
+        </div>
+    </div>
+</body>
+</html>
